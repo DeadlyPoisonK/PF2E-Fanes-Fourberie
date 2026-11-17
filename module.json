@@ -1,8 +1,8 @@
 {
   "id": "pf2e-fanes-fourberie",
   "title": "PF2E - Fane's Fourberie",
-  "description": "Automatiza la postura Fane's Fourberie (PF2e): al activarla consume un mazo (Playing Cards), crea un stack de 54 cartas como dagger o dart (con las runas del mazo) y, al terminar la postura, devuelve el mazo si queda más de la mitad de las cartas. Si PF2E - Throw Weapon está activo, las cartas usan animación de carta.",
-  "version": "0.2.0",
+  "description": "Automatiza Fane's Fourberie y Fane's Escape (PF2e). Postura: consume un mazo (Playing Cards), crea un stack de 54 cartas como dagger o dart (con las runas del mazo) y, al terminar, devuelve el mazo si queda más de la mitad. Escape: aplica Oculto, esparce el mazo en el piso y lo marca con una explosión de cartas y el aspecto fantasma de Invisible. Con Sequencer, tres cartas orbitan el token durante la postura. Con PF2E - Throw Weapon (0.3.0 o superior), las cartas se lanzan con animación y Escape esparce el mazo.",
+  "version": "0.3.0",
   "authors": [
     {
       "name": "DeadlyPoisonK",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "url": "https://github.com/DeadlyPoisonK/PF2E-Fanes-Fourberie",
   "manifest": "https://github.com/DeadlyPoisonK/PF2E-Fanes-Fourberie/releases/latest/download/module.json",
-  "download": "https://github.com/DeadlyPoisonK/PF2E-Fanes-Fourberie/releases/download/v0.2.0/module.zip",
+  "download": "https://github.com/DeadlyPoisonK/PF2E-Fanes-Fourberie/releases/download/v0.3.0/module.zip",
   "compatibility": {
     "minimum": "14",
     "verified": "14.369"
@@ -28,6 +28,19 @@
         "compatibility": {
           "minimum": "8.6.1"
         }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "pf2e-throw-weapon",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.3.0"
+        }
+      },
+      {
+        "id": "sequencer",
+        "type": "module"
       }
     ]
   },
