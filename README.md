@@ -15,7 +15,7 @@ El mazo puede ser un ítem de tipo **arma**, que permite grabar runas desde su f
 
 ## Con PF2E - Throw Weapon
 
-Es independiente, pero se complementa con [PF2E - Throw Weapon](https://github.com/DeadlyPoisonK/PF2E-Throw-Weapon): las cartas lanzadas se restan del montón y pasan al objetivo o quedan en el piso como botín. Recuperarlas al terminar el combate lo decide el jugador; el módulo no las devuelve solo.
+Es independiente, pero se complementa con [PF2E - Throw Weapon](https://github.com/DeadlyPoisonK/PF2E-Throw-Weapon): las cartas lanzadas se restan del montón y pasan al objetivo o quedan en el piso como botín, con animación de carta si Sequencer y JB2A están activos (el stack lleva `flags.pf2e-throw-weapon.animation = "card"`). Recuperarlas al terminar el combate lo decide el jugador; el módulo no las devuelve solo.
 
 ## Instalación
 

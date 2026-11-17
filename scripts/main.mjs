@@ -80,7 +80,7 @@ async function onStanceStart(effect) {
     stack.system.runes = foundry.utils.deepClone(deck.system.runes);
     if (deck.system.material) stack.system.material = foundry.utils.deepClone(deck.system.material);
   }
-  stack.flags = { [ID]: { stack: true } };
+  stack.flags = { [ID]: { stack: true }, "pf2e-throw-weapon": { animation: "card" } };
 
   // Datos del mazo para poder devolverlo igual (con runas) al terminar la postura.
   const deckData = deck.toObject();
